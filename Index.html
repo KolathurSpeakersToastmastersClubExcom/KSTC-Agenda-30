@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=https://claude.site/public/artifacts/c6647243-ed7d-48af-acae-8f3bb13ff4c0/embed">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Claude Published - Embedded</title>
+  <style>
+    :root{--bg:#f7f9fb;--card:#ffffff;--muted:#6b7280;--accent:#2563eb}
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+    body{background:var(--bg);display:flex;flex-direction:column}
+    header{background:#0f1724;color:#fff;padding:18px 22px}
+    header h1{margin:0;font-size:1.15rem}
+    main{flex:1;display:flex;align-items:flex-start;justify-content:center;padding:28px}
+    .card{width:100%;max-width:1100px;background:var(--card);border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.06);overflow:hidden}
+    .meta{padding:18px 22px;border-bottom:1px solid #eef2f7;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .meta .title{font-weight:700}
+    .meta .muted{color:var(--muted);font-size:0.95rem}
+    .links{margin-left:auto;display:flex;gap:10px}
+    .links a{background:transparent;border:1px solid #e6eefc;padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--accent);font-weight:600}
+    .iframe-wrap{height:78vh;border-top:1px solid #f1f5f9}
+    iframe{width:100%;height:100%;border:0;display:block}
+    .fallback{padding:20px;color:var(--muted);font-size:0.98rem}
+    @media (max-width:720px){.meta{flex-direction:column;align-items:flex-start}.links{margin-left:0}}
+  </style>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="https://claude.site/public/artifacts/c6647243-ed7d-48af-acae-8f3bb13ff4c0/embed">click here</a>.</p>
+  <header>
+    <h1>Claude Published — Embedded Viewer</h1>
+  </header>
+
+  <main>
+    <div class="card" role="main">
+      <div class="meta">
+        <div>
+          <div class="title">Claude Published Artifact</div>
+          <div class="muted">Source: Claude public artifact</div>
+        </div>
+
+        <div class="links" aria-hidden="true">
+          <a href="https://claude.ai/public/artifacts/9e2feeca-f828-4a7c-9812-5a7c2652e2a7" target="_blank" rel="noopener noreferrer">Open in Claude (new tab)</a>
+        </div>
+      </div>
+
+      <div class="iframe-wrap" aria-live="polite">
+        <!-- Embedded view (works only if Claude allows embedding into iframes) -->
+        <iframe
+          src="https://claude.ai/public/artifacts/9e2feeca-f828-4a7c-9812-5a7c2652e2a7"
+          title="Claude Published Artifact"
+          sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
+        ></iframe>
+      </div>
+
+      <div class="fallback">
+        If the page above is blank or shows an error, that likely means Claude prevents embedding via iframe. Click the link above to open the Claude page directly.
+      </div>
+    </div>
+  </main>
 </body>
 </html>
